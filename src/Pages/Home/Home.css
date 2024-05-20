@@ -1,0 +1,14 @@
+.container{
+    padding-left: 17%;
+    padding-right: 2%;
+    background-color: #f9f9f9;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.container-large-container{
+    padding-left: 7%;
+    background-color: #f9f9f9;
+}
+.wrapper{
+    display:contents;
+}

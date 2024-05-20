@@ -8,9 +8,9 @@ const App = () => {
   const [sidebar,setSidebar] =useState(true);
   return (
     <div>
-      <Navbar setSidebar={sidebar}/>
+      <Navbar setSidebar={setSidebar}/>
       <Routes>
-        <Route path ='/' element={<Home/>}/>
+        <Route path ='/' element={<Home sidebar={sidebar}/>}/>
         <Route path ='/video/:categoryId/:videoId' element={<Video/>}/>
         
       </Routes>

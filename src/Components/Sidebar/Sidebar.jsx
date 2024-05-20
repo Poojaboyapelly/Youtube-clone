@@ -16,8 +16,13 @@ import cameron from '../../assets/cameron.png';
 
 
 const Sidebar = ({sidebar}) => {
+  console.log(sidebar.sidebar, "sidebar");
+  console.log(`sidebar${sidebar.sidebar ? '' : '-small-sidebar'}`);
+
+
   return (
-    <div className={`sidebar ${sidebar?"":"small-sidebar"}`}>
+    
+    <div className={`sidebar${sidebar.sidebar?' ':'-small-sidebar'}`}>
         <div className='shortcut-links'>
           <div className='side-links'>
             <img src={home} alt='Home'/><p>Home</p>
